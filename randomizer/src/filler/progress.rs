@@ -487,7 +487,7 @@ impl<'s> Progress<'s> {
     }
 
     pub fn can_hit_hog_1f_switch(&self) -> bool {
-        self.can_hit_far_switch() || self.has_ice_rod() || (self.can_merge() && (self.has_sword() || self.has_hammer()))
+        self.can_hit_far_switch() || self.has_ice_rod() || (self.can_merge() && (self.has_sword() || self.has_hammer()) || self.has_boots())
     }
 
     // BOSSES ----------------------------------------------------------------------------------------------------------
